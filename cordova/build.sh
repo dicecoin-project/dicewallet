@@ -15,7 +15,6 @@ checkOK() {
 # Configs
 BUILDDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PROJECT="$BUILDDIR/project"
-VERSION=`cut -d '"' -f2 $BUILDDIR/../version.js`
 
 CURRENT_OS=$1
 
@@ -82,10 +81,10 @@ if [ ! -d $PROJECT ]; then
 
   echo "${OpenColor}${Green}* Installing plugins... ${CloseColor}"
 
-  cordova plugin add https://github.com/Initsogar/cordova-webintent.git
+  cordova plugin add https://github.com/florentvaldelievre/virtualartifacts-webIntent.git
   checkOK
 
-  cordova plugin add https://github.com/wildabeast/BarcodeScanner.git
+  cordova plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
   checkOK
 
   cordova plugin add org.apache.cordova.splashscreen
@@ -115,27 +114,39 @@ if [ ! -d $PROJECT ]; then
   cordova plugin add hu.dpal.phonegap.plugins.spinnerdialog
   checkOK
 
+  cordova plugin add org.apache.cordova.dialogs
+  checkOK
+
+  cordova plugin add org.apache.cordova.network-information
+  checkOK
+
+  cordova plugin add org.apache.cordova.console
+  checkOK
+
+  cordova plugin add hu.dpal.phonegap.plugins.uniquedeviceid
+  checkOK
+
 fi
 
 if $DBGJS
 then
   echo "${OpenColor}${Green}* Generating copay bundle (debug js)...${CloseColor}"
   cd $BUILDDIR/..
-  grunt dist-mobile-dbg
+  grunt
   checkOK
 else
   echo "${OpenColor}${Green}* Generating copay bundle...${CloseColor}"
   cd $BUILDDIR/..
-  grunt dist-mobile
+  grunt prod
   checkOK
 fi
 
 echo "${OpenColor}${Green}* Copying files...${CloseColor}"
 cd $BUILDDIR/..
-cp -af dist/web/** $PROJECT/www
+cp -af public/** $PROJECT/www
 checkOK
 
-sed "s/<\!-- PLACEHOLDER: CORDOVA SRIPT -->/<script type='text\/javascript' charset='utf-8' src='cordova.js'><\/script>/g" index.html > $PROJECT/www/index.html
+sed "s/<\!-- PLACEHOLDER: CORDOVA SRIPT -->/<script type='text\/javascript' charset='utf-8' src='cordova.js'><\/script>/g" public/index.html > $PROJECT/www/index.html
 checkOK
 
 cd $BUILDDIR

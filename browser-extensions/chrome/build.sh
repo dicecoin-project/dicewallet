@@ -20,7 +20,7 @@ checkOK() {
 BUILDDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 APPDIR="$BUILDDIR/copay-chrome-extension"
 ZIPFILE="copay-chrome-extension.zip"
-VERSION=`cut -d '"' -f2 $BUILDDIR/../../version.js|head -n 1`
+VERSION=`cut -d '"' -f2 $BUILDDIR/../../src/js/version.js|head -n 1`
 
 # Move to the build directory
 cd $BUILDDIR
@@ -35,7 +35,7 @@ mkdir -p $APPDIR
 
 # Re-compile copayBundle.js
 echo "${OpenColor}${Green}* Generating copay bundle...${CloseColor}"
-grunt prod
+grunt
 checkOK
 
 # Copy all chrome-extension files
@@ -45,11 +45,12 @@ checkOK
 
  
 INCLUDE=`cat ../include`
-cd $BUILDDIR/../..
-LIBS=`cat index.html |grep -o -E 'src="([^"#]+)"' | cut -d'"' -f2|grep lib`
-echo "LIBS: $LIBS"
+INITIAL=$BUILDDIR/initial.js
+echo "INITIAL: $INITIAL"
+cp -vf $INITIAL $APPDIR
 
-CMD="rsync -rLRv --exclude-from $BUILDDIR/../exclude  $INCLUDE $LIBS  $APPDIR"
+cd $BUILDDIR/../../public
+CMD="rsync -rLRv --exclude-from $BUILDDIR/../exclude $INCLUDE $APPDIR"
 echo $CMD
 $CMD
 checkOK
