@@ -38,7 +38,7 @@ angular.module('copayApp.services').factory('configService', function(localStora
         unitName: 'START',
         unitToSatoshi: 100000000,
         unitDecimals: 8,
-        unitCode: 'START',
+        unitCode: 'start',
         alternativeName: 'Pound Sterling',
         alternativeIsoCode: 'GBP',
       }
