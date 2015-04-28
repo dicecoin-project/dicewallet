@@ -1,0 +1,17 @@
+<div 
+  ng-controller="createProfileController as cp">
+
+  <div class="text-center logo-setup p20">
+    <img src="img/logo-negative-beta.svg" alt="Copay" width="100">
+    <div ng-include="'views/includes/version.html'"></div>
+  </div>
+  <div class="text-center size-12 text-warning" ng-show="cp.error">
+    {{(cp.error)|translate}}. Retrying...
+  </div>
+ 
+  <div class="m20tp text-white text-center  animated infinite flash" ng-if="cp.creatingProfile">
+    <span translate>Creating wallet...</span>
+  </div>
+</div>
+<div class="extra-margin-bottom"></div>
+
