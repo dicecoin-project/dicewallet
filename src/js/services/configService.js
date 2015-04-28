@@ -12,17 +12,17 @@ angular.module('copayApp.services').factory('configService', function(localStora
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'https://bws.startwallet.com/bws/api',
     },
 
     // insight
     insight: {
       testnet: {
-        url: 'https://test-insight.bitpay.com:443',
+        url: 'http://testnet.explorer.startcoin.org',
         transports: ['polling'],
       },
       livenet: {
-        url: 'https://insight.bitpay.com:443',
+        url: 'http://explorer.startcoin.org',
         transports: ['polling'],
       },
     },
@@ -35,23 +35,23 @@ angular.module('copayApp.services').factory('configService', function(localStora
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'bits',
-        unitToSatoshi: 100,
-        unitDecimals: 2,
-        unitCode: 'bit',
-        alternativeName: 'US Dollar',
-        alternativeIsoCode: 'USD',
+        unitName: 'START',
+        unitToSatoshi: 100000000,
+        unitDecimals: 8,
+        unitCode: 'START',
+        alternativeName: 'Pound Sterling',
+        alternativeIsoCode: 'GBP',
       }
     },
 
     // local encryption/security config
     passphraseConfig: {
       iterations: 5000,
-      storageSalt: 'mjuBtGybi/4=',
+      storageSalt: 'YC=y2=-HEgvl',
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'https://rates.startwallet.com/all',
     },
   };
 
