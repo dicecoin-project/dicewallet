@@ -18,7 +18,7 @@
     "foundation-icon-fonts": "*",
     "ng-lodash": "~0.2.0",
     "angular-moment": "~0.9.0",
-    "angular-bitcore-wallet-client": "git://github.com/startcoin-project/angular-bitcore-wallet-client.git#b524b5788606af3d646419bc7b0c7c96d98b06ae",
+    "angular-bitcore-wallet-client": "git://github.com/startcoin-project/angular-bitcore-wallet-client.git#88324f77ed7489c19b1fcc6442d8f8bdcfc9172b",
     "angular-ui-router": "~0.2.13",
     "qrcode-decoder-js": "*",
     "angular-ui-switch": "~0.1.0"
