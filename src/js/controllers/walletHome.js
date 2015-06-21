@@ -394,7 +394,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
 
   this.copyAddress = function(addr) {
     if (isCordova) {
-      window.cordova.plugins.clipboard.copy('bitcoin:' + addr);
+      window.cordova.plugins.clipboard.copy('startcoin:' + addr);
       window.plugins.toast.showShortCenter('Copied to clipboard');
     } else if (nodeWebkit.isDefined()) {
       nodeWebkit.writeToClipboard(addr);
@@ -406,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       if (isMobile.Android() || isMobile.Windows()) {
         window.ignoreMobilePause = true;
       }
-      window.plugins.socialsharing.share('bitcoin:' + addr, null, null, null);
+      window.plugins.socialsharing.share('startcoin:' + addr, null, null, null);
     }
   };
 
@@ -826,7 +826,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
     if (this._paypro)
       return value;
 
-    if (value.indexOf('bitcoin:') === 0) {
+    if (value.indexOf('startcoin:') === 0) {
       return this.setFromUri(value);
     } else if (/^https?:\/\//.test(value)) {
       return this.setFromPayPro(value);

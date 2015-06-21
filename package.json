@@ -1,6 +1,6 @@
 {
   "name": "copay",
-  "description": "A multisignature wallet",
+  "description": "A multisignature wallet based on copay",
   "author": "BitPay",
   "version": "1.0.1",
   "keywords": [
@@ -28,14 +28,14 @@
     "plugin": false
   },
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/bitpay/copay",
+  "homepage": "https://github.com/startcoin-project/copay",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/bitpay/copay.git",
+    "url": "git://github.com/startcoin-project/copay.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/copay/issues"
+    "url": "https://github.com/bitpay/startcoin-project/issues"
   },
   "dependencies": {
     "express": "^4.11.2",

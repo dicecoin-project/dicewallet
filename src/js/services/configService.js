@@ -12,7 +12,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
 
     // Bitcore wallet service URL
     bws: {
-      url: 'https://bws.bitpay.com/bws/api',
+      url: 'http://10.211.55.12:3232/bws/api',
     },
 
     // wallet default config
@@ -23,17 +23,17 @@ angular.module('copayApp.services').factory('configService', function(storageSer
       reconnectDelay: 5000,
       idleDurationMin: 4,
       settings: {
-        unitName: 'bits',
-        unitToSatoshi: 100,
-        unitDecimals: 2,
-        unitCode: 'bit',
-        alternativeName: 'US Dollar',
-        alternativeIsoCode: 'USD',
+        unitName: 'START',
+        unitToSatoshi: 100000000,
+        unitDecimals: 8,
+        unitCode: 'START',
+        alternativeName: 'Pound Sterling',
+        alternativeIsoCode: 'GBP',
       }
     },
 
     rates: {
-      url: 'https://insight.bitpay.com:443/api/rates',
+      url: 'https://rates.startwallet.com/all',
     },
   };
 
