@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.bitpay.copay" 
+<widget id="com.startcoin.startwallet" 
   version="1.0.1"
   android-versionCode="36"
   ios-CFBundleVersion="1.0.1">
-    <name>Copay</name>
+    <name>StartWallet</name>
     <description>
-      A secure bitcoin wallet for friends and companies.
+      A secure StartCOIN wallet for friends and companies.
     </description>
-    <author email="support@bitpay.com" href="https://copay.io">
-        BitPay Inc.
+    <author email="hello@startjoin.com" href="https://startwalet.com">
+       StartCOIN Holdings Ltd
     </author>
     <content src="index.html" />
     <access origin="*" />
