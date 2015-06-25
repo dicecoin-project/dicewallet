@@ -3,7 +3,7 @@
   version="1.0.1"
   android-versionCode="36"
   ios-CFBundleVersion="1.0.1">
-    <name>StartWallet</name>
+    <name>Startwallet</name>
     <description>
       A secure StartCOIN wallet for friends and companies.
     </description>
@@ -16,7 +16,7 @@
     <preference name="iosPersistentFileLocation" value="Library" />
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
-    <preference name="SplashScreen" value="copayscreen" />
+    <preference name="SplashScreen" value="startwalletscreen" />
     <preference name="SplashScreenDelay" value="10000" />
     <preference name="BackgroundColor" value="#2C3E50" />
     <preference name="StatusBarOverlaysWebView" value="false" />

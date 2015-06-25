@@ -8,7 +8,7 @@ plugins:
 	make -C project plugins
 
 project: 
-	cordova create project com.bitpay.copay Copay
+	cordova create project com.startcoin.startwallet Startwallet
 	cp config.xml project/config.xml
 	cp ProjectMakefile project/Makefile
 	cp -af ../dist/web/** project/www
@@ -29,14 +29,14 @@ wp8: project plugins
 
 ios: project plugins
 	make -C project ios
-	cp ios/Copay-Info.plist project/platforms/ios/Copay-Info.plist
-	mkdir -p project/platforms/ios/Copay/Resources/icons
-	mkdir -p project/platforms/ios/Copay/Resources/splash
-	cp -R ios/icons/* project/platforms/ios/Copay/Resources/icons
-	cp -R ios/splash/* project/platforms/ios/Copay/Resources/splash
+	cp ios/Startwallet-Info.plist project/platforms/ios/Startwallet-Info.plist
+	mkdir -p project/platforms/ios/Startwallet/Resources/icons
+	mkdir -p project/platforms/ios/Startwallet/Resources/splash
+	cp -R ios/icons/* project/platforms/ios/Startwallet/Resources/icons
+	cp -R ios/splash/* project/platforms/ios/Startwallet/Resources/splash
 
 open-ios: ios
-	open project/platforms/ios/Copay.xcodeproj
+	open project/platforms/ios/Startwallet.xcodeproj
 
 run-android: android
 	make -C project run-android
