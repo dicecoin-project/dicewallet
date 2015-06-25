@@ -272,7 +272,7 @@ a.missing-copayers {
 }
 
 .sidebar {
-  background: #2C3E50;
+  background: #292d31;
 }
 
 .sidebar li {
@@ -300,6 +300,7 @@ a.missing-copayers {
 }
 
 .sidebar header {
+  display:none;
   text-align: center;
   padding: 1.7rem;
   border-bottom: 1px solid #384B5F;
