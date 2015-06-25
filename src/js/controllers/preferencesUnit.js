@@ -13,13 +13,13 @@ angular.module('copayApp.controllers').controller('preferencesUnitController',
       //     decimals: 0,
       //     code: 'sat',
       //   }, 
-      {
+      /*{
         name: 'bits (1,000,000 bits = 1BTC)',
         shortName: 'bits',
         value: 100,
         decimals: 2,
         code: 'bit',
-      }
+      }*/
       // TODO : add mBTC to bitcore-wallet-client formatAmount()
       // ,{
       //   name: 'mBTC (1,000 mBTC = 1BTC)',
@@ -29,11 +29,11 @@ angular.module('copayApp.controllers').controller('preferencesUnitController',
       //   code: 'mbtc',
       // }
       , {
-        name: 'BTC',
-        shortName: 'BTC',
+        name: 'START',
+        shortName: 'START',
         value: 100000000,
         decimals: 8,
-        code: 'btc',
+        code: 'START',
       }
     ];
 
