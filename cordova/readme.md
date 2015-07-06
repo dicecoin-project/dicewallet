@@ -3,7 +3,7 @@
 ## Requisites
 * [Install Android SDK](https://developer.android.com/sdk/installing/index.html?pkg=tools)
 * [Install XCode for IOS](https://itunes.apple.com/en/app/xcode/id497799835?mt=12)
-* Install Cordova: ``sudo npm install -g cordova``
+* Install Cordova: ``sudo npm install -g cordova@4.3.1``
 * Install Startwallet dependecies: ``bower install && npm install``
 * Install Java-SDK and Apache Ant
 
