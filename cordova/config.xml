@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.startcoin.startwallet" 
   version="1.0.1"
-  android-versionCode="36"
+  android-versionCode="37"
   ios-CFBundleVersion="1.0.1">
     <name>Startwallet</name>
     <description>
@@ -15,8 +15,7 @@
     <preference name="AndroidPersistentFileLocation" value="Internal" />
 	<preference name="android-targetSdkVersion" value="19" />
 	<preference name="android-minSdkVersion" value="19" />
-	<preference name="android-maxSdkVersion" value="19" />
-<preference name="iosPersistentFileLocation" value="Library" />
+	<preference name="iosPersistentFileLocation" value="Library" />
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
     <preference name="SplashScreen" value="startwalletscreen" />
