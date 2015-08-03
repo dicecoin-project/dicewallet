@@ -69,7 +69,6 @@ if [ ! -d $PROJECT ]; then
 
   if [ $CURRENT_OS == "IOS" ]; then
     echo "${OpenColor}${Green}* Adding IOS platform... ${CloseColor}"
-	cordova plugin add cordova-plugin-whitelist@1.0.0
     cordova platforms add ios
     checkOK
   fi
