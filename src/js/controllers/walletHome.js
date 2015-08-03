@@ -406,7 +406,7 @@ angular.module('copayApp.controllers').controller('walletHomeController', functi
       if (isMobile.Android() || isMobile.Windows()) {
         window.ignoreMobilePause = true;
       }
-      window.plugins.socialsharing.share('I accept StartCOIN https://startcoin.com startcoin:' + addr, null, null, null);
+      window.plugins.socialsharing.share('startcoin:' + addr, null, null, null);
     }
   };
 
