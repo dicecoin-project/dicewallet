@@ -28,14 +28,14 @@
     "plugin": false
   },
   "id": "jid1-x7bV5evAaI1P9Q",
-  "homepage": "https://github.com/startcoin-project/copay",
+  "homepage": "https://github.com/dicecoin-project/dicewallet",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/startcoin-project/copay.git",
+    "url": "git://github.com/dicecoin-project/dicewallet.git",
     "type": "git"
   },
   "bugs": {
-    "url": "https://github.com/bitpay/startcoin-project/issues"
+    "url": "https://github.com/dicecoin-project/dicewallet/issues"
   },
   "dependencies": {
     "express": "^4.11.2",

@@ -33,7 +33,7 @@ angular.module('copayApp.services').factory('configService', function(storageSer
     },
 
     rates: {
-      url: 'https://rates.startwallet.com/all',
+      url: 'https://rates.dicecoin.info/all',
     },
   };
 

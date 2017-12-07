@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.startcoin.startwallet" 
+<widget id="info.dicecoin.dicewallet" 
   version="1.0.1"
   android-versionCode="38"
   ios-CFBundleVersion="1.0.2">
-    <name>Startwallet</name>
+    <name>Dicewallet</name>
     <description>
-      A secure StartCOIN wallet for friends and companies.
+      A secure DiceCOIN wallet.
     </description>
-    <author email="hello@startjoin.com" href="https://startwalet.com">
-       StartCOIN Holdings Ltd
+    <author email="hello@dicecoin.info" href="https://dicecoin.info">
+       DiceCOIN Team
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -18,7 +18,7 @@
 	<preference name="iosPersistentFileLocation" value="Library" />
     <preference name="DisallowOverscroll" value="true"/>
     <preference name="HideKeyboardFormAccessoryBar" value="true"/>
-    <preference name="SplashScreen" value="startwalletscreen" />
+    <preference name="SplashScreen" value="dicewalletscreen" />
     <preference name="SplashScreenDelay" value="10000" />
     <preference name="BackgroundColor" value="#2C3E50" />
     <preference name="StatusBarOverlaysWebView" value="false" />

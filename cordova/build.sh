@@ -56,7 +56,7 @@ echo "Project directory is $PROJECT"
 if [ ! -d $PROJECT ]; then
   cd $BUILDDIR
   echo "${OpenColor}${Green}* Creating project... ${CloseColor}"
-  cordova create project com.startcoin.startwallet Startwallet
+  cordova create project info.dicecoin.dicewallet Dicewallet
   checkOK
 
   cd $PROJECT
@@ -133,12 +133,12 @@ fi
 
 if $DBGJS
 then
-  echo "${OpenColor}${Green}* Generating startwallet bundle (debug js)...${CloseColor}"
+  echo "${OpenColor}${Green}* Generating dicewallet bundle (debug js)...${CloseColor}"
   cd $BUILDDIR/..
   grunt
   checkOK
 else
-  echo "${OpenColor}${Green}* Generating startwallet bundle...${CloseColor}"
+  echo "${OpenColor}${Green}* Generating dicewallet bundle...${CloseColor}"
   cd $BUILDDIR/..
   grunt prod
   checkOK
@@ -180,19 +180,19 @@ if [ $CURRENT_OS == "IOS" ]; then
   mkdir -p $PROJECT/platforms/ios
   checkOK
 
-  cp ios/Startwallet-Info.plist $PROJECT/platforms/ios/Startwallet-Info.plist
+  cp ios/Dicewallet-Info.plist $PROJECT/platforms/ios/Dicewallet-Info.plist
   checkOK
 
-  mkdir -p $PROJECT/platforms/ios/Startwallet/Resources/icons
+  mkdir -p $PROJECT/platforms/ios/Dicewallet/Resources/icons
   checkOK
 
-  mkdir -p $PROJECT/platforms/ios/Startwallet/Resources/splash
+  mkdir -p $PROJECT/platforms/ios/Dicewallet/Resources/splash
   checkOK
 
-  cp -R ios/icons/* $PROJECT/platforms/ios/Startwallet/Resources/icons
+  cp -R ios/icons/* $PROJECT/platforms/ios/Dicewallet/Resources/icons
   checkOK
 
-  cp -R ios/splash/* $PROJECT/platforms/ios/Startwallet/Resources/splash
+  cp -R ios/splash/* $PROJECT/platforms/ios/Dicewallet/Resources/splash
   checkOK
 fi
 

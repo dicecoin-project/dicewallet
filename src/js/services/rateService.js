@@ -22,7 +22,7 @@ var RateService = function(opts) {
   self.UNAVAILABLE_ERROR = 'Service is not available - check for service.isAvailable() or use service.whenAvailable()';
   self.UNSUPPORTED_CURRENCY_ERROR = 'Currency not supported';
 
-  self._url = opts.url || 'https://rates.startwallet.com/all';
+  self._url = opts.url || 'https://rates.dicecoin.info/all';
 
   self._isAvailable = false;
   self._rates = {};
@@ -46,7 +46,7 @@ RateService.prototype._fetchCurrencies = function() {
 
   var backoffSeconds = 5;
   var updateFrequencySeconds = 3600;
-  var rateServiceUrl = 'https://rates.startwallet.com/all';
+  var rateServiceUrl = 'https://rates.dicecoin.info/all';
 
   var retrieve = function() {
     //log.info('Fetching exchange rates');

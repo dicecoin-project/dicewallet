@@ -95,8 +95,8 @@ angular.module('copayApp.controllers').controller('copayersController',
         if (isMobile.Android() || isMobile.Windows()) {
           window.ignoreMobilePause = true;
         }
-        var message = 'Join my Startwallet. Here is the invitation code: ' + secret + '  You can download Startwallet for your phone or desktop at https://startwallet.com';
-        window.plugins.socialsharing.share(message, 'Invitation to share a Startwallet', null, null);
+        var message = 'Join my Dicewallet. Here is the invitation code: ' + secret + '  You can download Dicewallet for your phone or desktop at https://dicecoin.info';
+        window.plugins.socialsharing.share(message, 'Invitation to share a Dicewallet', null, null);
       }
     };
 
