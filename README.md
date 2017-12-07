@@ -19,8 +19,8 @@ and more.
 ## Installation
 
 ```sh
-git clone https://github.com/bitpay/copay.git
-cd copay
+git clone https://github.com/dicecoin-project/dicewallet.git
+cd dicewallet
 ```
 
 Install [bower](http://bower.io/) and [grunt](http://gruntjs.com/getting-started) if you haven't already:
@@ -44,7 +44,7 @@ For production environments:
 grunt prod
 ```
 
-Open *Copay*:
+Open *DiceWallet*:
 
 ```sh
 npm start
@@ -54,7 +54,7 @@ Then visit localhost:3000 in your browser.
 
 ## Bitcore Wallet Service
 
-Copay depends on  Bitcore Wallet Service (BWS) for blockchain information, networking and copayer synchronization. BWS can be run within minutes or you can use a public instance. Switch between BWS instances is very simple and can be done with a click from Copay. BWS also allows Copay to interoperate with others wallet like Bitcore-Wallet CLI https://github.com/bitpay/bitcore-wallet
+DiceWallet depends on  Bitcore Wallet Service (BWS) for blockchain information, networking and copayer synchronization. BWS can be run within minutes or you can use a public instance. Switch between BWS instances is very simple and can be done with a click from Copay. BWS also allows Copay to interoperate with others wallet like Bitcore-Wallet CLI https://github.com/bitpay/bitcore-wallet
 
 
 ## Tests
